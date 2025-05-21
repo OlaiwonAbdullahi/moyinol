@@ -66,7 +66,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex flex-col font-lato items-center md:py-28 py-12 px-4 md:px-12 max-w-7xl mx-auto relative overflow-hidden">
+    <div className="flex flex-col font-lato items-center md:py-28 py-27 px-4 md:px-12 max-w-7xl mx-auto relative overflow-hidden">
       {/* Floating Icons */}
       {showIcons &&
         floatingIcons.map((item, index) => (
@@ -86,8 +86,8 @@ const Hero = () => {
         ))}
 
       {/* Badge with dots */}
-      <div className="bg-blue-100 rounded-full px-6 py-1 text-[#1E3A8A] font-medium text-sm mb-5 z-10">
-        <div className="flex items-center space-x-2">
+      <div className="bg-blue-100 rounded-full md:px-6 px-3 py-1 text-[#1E3A8A] font-medium text-sm mb-5 z-10">
+        <div className="flex items-center space-x-2 md:space-x-1">
           <span>Innovative</span>
           <GoDotFill size={14} className="text-[#1E3A8A]" />
           <span>Professional</span>
@@ -110,10 +110,10 @@ const Hero = () => {
 
         {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
-          <button className="px-8 py-3 cursor-pointer whitespace-nowrap flex items-center gap-2.5 bg-[#1E3A8A] hover:bg-blue-900 text-white font-medium rounded-lg transition-colors">
+          <button className="px-8 py-3 justify-center cursor-pointer whitespace-nowrap flex items-center gap-2.5 bg-[#1E3A8A] hover:bg-blue-900 text-white font-medium rounded-lg transition-colors">
             Get Started <GoArrowUpRight className="size-5" />
           </button>
-          <button className="px-8 py-3 cursor-pointer whitespace-nowrap flex items-center gap-2.5 border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-blue-50 font-medium rounded-lg transition-colors">
+          <button className="px-8 py-3 cursor-pointer justify-center whitespace-nowrap flex items-center gap-2.5 border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-blue-50 font-medium rounded-lg transition-colors">
             Learn More <IoIosArrowRoundForward className="size-5" />
           </button>
         </div>

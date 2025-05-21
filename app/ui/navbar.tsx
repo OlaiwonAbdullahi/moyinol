@@ -51,9 +51,9 @@ const NavBar = () => {
 
   return (
     <header
-      className={`fixed font-lato top-0 w-full z-40 transition-all duration-300 ${
+      className={`fixed font-lato top-0 md:w-full w-10/12 mx-auto z-40 transition-all duration-300 ${
         scrolled
-          ? "bg-gradient-to-r  from-[#F0F4FF] via-[#ffffff] to-[#F0F4FF] shadow-md py-6"
+          ? "bg-gradient-to-r  from-[#F0F4FF] via-[#ffffff] to-[#F0F4FF] shadow-md py-3 md:py-6 "
           : "bg-gradient-to-r  from-[#F0F4FF]/90 via-[#ffffff]/90 to-[#F0F4FF]/90 py-6"
       }`}
     >
@@ -62,10 +62,10 @@ const NavBar = () => {
         <div className="flex items-center">
           <a
             href="#"
-            className="text-2xl font-bold text-[#1E3A8A] font-unbounded"
+            className="md:text-2xl text-xl font-bold text-[#1E3A8A] font-unbounded"
           >
             {" "}
-            Moyinol Consulting.
+            Moyinol <br className="md:hidden flex" /> Consulting.
           </a>
         </div>
 
@@ -110,7 +110,7 @@ const NavBar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Overlay - Only visible when menu is open */}
       <div
         id="mobile-menu-overlay"
         className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-40 transition-opacity duration-300 ${
@@ -118,11 +118,12 @@ const NavBar = () => {
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         }`}
+        onClick={() => setOpen(false)}
       />
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-4/5 max-w-sm bg-white z-50 shadow-xl transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-full md:w-4/5 w-full md:max-w-sm max-w-full bg-white z-50 shadow-xl transform transition-transform duration-300 ease-in-out ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -139,7 +140,7 @@ const NavBar = () => {
           </button>
         </div>
 
-        <nav className="py-8">
+        <nav className="py-8 overflow-y-auto max-h-[calc(100vh-80px)]">
           <ul className="space-y-1 px-2">
             {navItems.map((item) => (
               <li key={item.name}>
