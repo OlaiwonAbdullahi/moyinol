@@ -109,7 +109,7 @@ const Hero = () => {
         </p>
 
         {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+        <div className="flex flex-col sm:flex-row justify-center gap-4 pt-2">
           <button className="px-8 py-3 justify-center cursor-pointer whitespace-nowrap flex items-center gap-2.5 bg-[#1E3A8A] hover:bg-blue-900 text-white font-medium rounded-lg transition-colors">
             Get Started <GoArrowUpRight className="size-5" />
           </button>
@@ -123,7 +123,7 @@ const Hero = () => {
       <div className="w-full relative z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-100/20 to-transparent rounded-2xl"></div>
         <Image
-          src={"/hero.png"}
+          src={"/hero.jpeg"}
           width={1000}
           height={1000}
           alt="Digital solutions showcase"

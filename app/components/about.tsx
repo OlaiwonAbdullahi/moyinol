@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -32,9 +33,11 @@ const About = () => {
         </button>
       </div>
       <div className="md:w-[712px] h-[500px] w-full flex justify-center">
-        <img
-          src="https://placehold.co/600"
+        <Image
+          src={"/about.jpeg"}
           alt="Team collaboration"
+          width={1000}
+          height={1000}
           className="rounded-lg shadow-lg object-cover w-full h-auto"
         />
       </div>

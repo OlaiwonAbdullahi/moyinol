@@ -3,6 +3,7 @@ import { Lato, Unbounded } from "next/font/google";
 import "./globals.css";
 import NavBar from "./ui/navbar";
 import Footer from "./ui/footer";
+import Cta from "./ui/cta";
 
 const lato = Lato({
   variable: "--font-lato",
@@ -31,6 +32,7 @@ export default function RootLayout({
       <body className={`${lato.variable} ${unbounded.variable} antialiased`}>
         <NavBar />
         {children}
+        <Cta />
         <Footer />
       </body>
     </html>

@@ -85,6 +85,7 @@ const Service = () => {
       iconBgColor: "bg-blue-50/20",
       borderColor: "border-blue-50",
     },
+
     {
       title: "KYC & CDD Services",
       icon: <PiIdentificationCardLight className="size-7" />,
@@ -164,6 +165,16 @@ const Service = () => {
       textColor: "text-blue-50",
       iconBgColor: "bg-blue-50/20",
       borderColor: "border-blue-50",
+    },
+    {
+      title: "Audit Issues Remediation Validation",
+      icon: <PiGavelLight className="size-7" />,
+      description:
+        " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui id quas quos hic, adipisci reiciendis. Voluptatibus quasi quiseligendi sed ipsam. Tempore officiis dicta nemo enim animi! Quaerat,provident.",
+      bgColor: "bg-blue-50",
+      textColor: "text-blue-900",
+      iconBgColor: "bg-blue-900/20",
+      borderColor: "border-blue-900",
     },
   ];
 
