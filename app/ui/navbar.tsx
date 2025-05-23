@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { LiaTimesSolid } from "react-icons/lia";
@@ -44,9 +45,9 @@ const NavBar = () => {
 
   const navItems = [
     { name: "Home", href: "#" },
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#services" },
-    { name: "Contact", href: "#contact" },
+    { name: "About", href: "/about" },
+    { name: "Services", href: "/services" },
+    { name: "Contact", href: "/contact" },
   ];
 
   return (
@@ -74,13 +75,13 @@ const NavBar = () => {
           <ul className="flex">
             {navItems.map((item) => (
               <li key={item.name}>
-                <a
+                <Link
                   href={item.href}
                   className="px-4 py-2 mx-1 text-gray-700 font-medium hover:text-[#1E3A8A] transition-colors relative group"
                 >
                   {item.name}
                   <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1E3A8A] transition-all duration-300 group-hover:w-full"></span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -88,7 +89,7 @@ const NavBar = () => {
         <nav className="hidden md:flex items-center space-x-1">
           <div className="ml-6">
             <a
-              href="#contact"
+              href="/contact"
               className="bg-[#1E3A8A] hover:bg-[#1e3b8adc] text-white px-6 py-4 whitespace-nowrap rounded-md transition-colors duration-300 font-medium shadow-sm"
             >
               Book A Call
@@ -144,13 +145,13 @@ const NavBar = () => {
           <ul className="space-y-1 px-2">
             {navItems.map((item) => (
               <li key={item.name}>
-                <a
+                <Link
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className="block px-4 py-3 text-gray-700 hover:bg-[#1E3A8A]/10 hover:text-[#1E3A8A] rounded-lg transition-colors font-medium"
                 >
                   {item.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
