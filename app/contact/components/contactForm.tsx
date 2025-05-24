@@ -1,12 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import {
-  LuMail,
-  LuMessageSquare,
-  LuPhone,
-  LuSend,
-  LuUser,
-} from "react-icons/lu";
+import { LuSend } from "react-icons/lu";
 
 type FormData = {
   name: string;
@@ -110,9 +104,6 @@ const ContactForm: React.FC = () => {
             Full Name *
           </label>
           <div className="relative">
-            <div className="absolute z-30 inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <LuUser className="h-5 w-5 text-gray-400" />
-            </div>
             <input
               type="text"
               name="name"
@@ -120,7 +111,7 @@ const ContactForm: React.FC = () => {
               value={formData.name}
               onChange={handleInputChange}
               placeholder="Enter your full name"
-              className={`w-full pl-10 pr-4 py-3 border rounded-lg bg-white/80 backdrop-blur-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 ${
+              className={`w-full  px-3 py-2 text-sm border rounded-lg bg-white/80 backdrop-blur-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 ${
                 errors.name
                   ? "border-red-300 focus:ring-red-500/20 focus:border-red-500"
                   : "border-gray-300 focus:ring-blue-500/20 focus:border-blue-500"
@@ -141,9 +132,6 @@ const ContactForm: React.FC = () => {
             Email Address *
           </label>
           <div className="relative">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <LuMail className="z-10 h-5 w-5 text-gray-400" />
-            </div>
             <input
               type="email"
               name="email"
@@ -151,7 +139,7 @@ const ContactForm: React.FC = () => {
               value={formData.email}
               onChange={handleInputChange}
               placeholder="Enter your email address"
-              className={`w-full pl-10 pr-4 py-3 border rounded-lg bg-white/80 backdrop-blur-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 ${
+              className={`w-full px-3 py-2 text-sm border rounded-lg bg-white/80 backdrop-blur-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 ${
                 errors.email
                   ? "border-red-300 focus:ring-red-500/20 focus:border-red-500"
                   : "border-gray-300 focus:ring-blue-500/20 focus:border-blue-500"
@@ -172,9 +160,6 @@ const ContactForm: React.FC = () => {
             Phone Number *
           </label>
           <div className="relative">
-            <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-              <LuPhone className="z-10 h-5 w-5 text-gray-400" />
-            </div>
             <input
               type="tel"
               name="phone"
@@ -182,7 +167,7 @@ const ContactForm: React.FC = () => {
               value={formData.phone}
               onChange={handleInputChange}
               placeholder="+1 (555) 123-4567"
-              className={`w-full pl-10 pr-4 py-3 border rounded-lg bg-white/80 backdrop-blur-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 ${
+              className={`w-full  px-3 py-2 text-sm border rounded-lg bg-white/80 backdrop-blur-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 ${
                 errors.phone
                   ? "border-red-300 focus:ring-red-500/20 focus:border-red-500"
                   : "border-gray-300 focus:ring-blue-500/20 focus:border-blue-500"
@@ -203,9 +188,6 @@ const ContactForm: React.FC = () => {
             Message *
           </label>
           <div className="relative">
-            <div className="absolute top-3 left-3 pointer-events-none">
-              <LuMessageSquare className="z-10 h-5 w-5 text-gray-400" />
-            </div>
             <textarea
               name="message"
               id="message"
@@ -213,7 +195,7 @@ const ContactForm: React.FC = () => {
               value={formData.message}
               onChange={handleInputChange}
               placeholder="Tell us how we can help you..."
-              className={`w-full pl-10 pr-4 py-3 border rounded-lg bg-white/80 backdrop-blur-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 resize-none ${
+              className={`w-full  px-3 py-2 text-sm border rounded-lg bg-white/80 backdrop-blur-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 transition-all duration-200 resize-none ${
                 errors.message
                   ? "border-red-300 focus:ring-red-500/20 focus:border-red-500"
                   : "border-gray-300 focus:ring-blue-500/20 focus:border-blue-500"

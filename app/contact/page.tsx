@@ -8,11 +8,11 @@ const Page = () => {
   return (
     <div>
       <Hero />
-      <div className=" flex flex-col md:flex-row  p-6 bg-white ">
-        <div className=" w-1/2">
+      <div className=" flex flex-col md:flex-row  p-6 bg-white items-start ">
+        <div className=" md:w-1/2 w-full">
           <ContactForm />
         </div>
-        <div className=" w-1/2">
+        <div className=" md:w-1/2 w-full">
           <ContactDetails />
         </div>
       </div>

@@ -117,7 +117,7 @@ const Service = () => {
       borderColor: "border-blue-900",
     },
     {
-      title: "Control Reviews & Recommendations",
+      title: "Control Reviews",
       icon: <PiChalkboardTeacherThin className="size-7" />,
       description:
         " Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui id quas quos hic, adipisci reiciendis. Voluptatibus quasi quiseligendi sed ipsam. Tempore officiis dicta nemo enim animi! Quaerat,provident.",

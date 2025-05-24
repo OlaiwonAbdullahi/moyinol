@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="relative h-[60vh] w-full overflow-hidden">
+    <div className="relative md:h-[60vh] h-[40vh] mt-25 md:mt-0 w-full overflow-hidden">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

@@ -7,6 +7,7 @@ const Page = () => {
   return (
     <div>
       <Hero />
+
       <Vision />
       <Mission />
     </div>
