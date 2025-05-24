@@ -16,9 +16,9 @@ const Hero = () => {
       <div className="relative z-10 flex items-center justify-center h-full px-6 lg:px-8">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-white  leading-tight">
-            About <span className="text-[#1E3A8A]">Us</span>
+            Contact <span className="text-[#1E3A8A]">Us</span>
           </h1>
-          <div className=" z-20 text-gray-300">Home | About</div>
+          <div className=" z-20 text-gray-300">Get In Touch</div>
         </div>
       </div>
     </div>

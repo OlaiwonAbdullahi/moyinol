@@ -52,7 +52,7 @@ const NavBar = () => {
 
   return (
     <header
-      className={`fixed font-lato top-0 md:w-full w-10/12 mx-auto z-40 transition-all duration-300 ${
+      className={`fixed font-lato top-0 w-full mx-auto z-40 transition-all duration-300 ${
         scrolled
           ? "bg-gradient-to-r  from-[#F0F4FF] via-[#ffffff] to-[#F0F4FF] shadow-md py-3 md:py-6 "
           : "bg-gradient-to-r  from-[#F0F4FF]/90 via-[#ffffff]/90 to-[#F0F4FF]/90 py-6"
