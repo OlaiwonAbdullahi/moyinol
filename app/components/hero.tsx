@@ -123,7 +123,7 @@ const Hero = () => {
       <div className="w-full relative z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-blue-100/20 to-transparent rounded-2xl"></div>
         <Image
-          src={"/hero.jpeg"}
+          src={"/hero.jpg"}
           width={1000}
           height={1000}
           alt="Digital solutions showcase"
