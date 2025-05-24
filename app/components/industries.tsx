@@ -1,5 +1,6 @@
 import React from "react";
 import { BsBuilding, BsBank } from "react-icons/bs";
+import { CgArrowRight } from "react-icons/cg";
 import { FaBalanceScale, FaRegBuilding } from "react-icons/fa";
 
 const IndustryCard = ({
@@ -28,9 +29,9 @@ const IndustryCard = ({
       <p className="text-gray-600 leading-relaxed">{description}</p>
       <a
         href="#"
-        className="inline-block mt-4 text-[#1E3A8A] font-medium text-sm hover:underline"
+        className="flex flex-row items-center gap-2.5  mt-4 text-[#1E3A8A] font-medium text-sm hover:underline"
       >
-        Learn more →
+        Learn more <CgArrowRight />
       </a>
     </div>
   );
