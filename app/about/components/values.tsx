@@ -37,10 +37,10 @@ const Values = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <div className="inline-flex items-center bg-[#1E3A8A]/10 text-[#1E3A8A] text-sm font-semibold px-4 py-2 rounded-full mb-4">
+          <div className="inline-flex items-center bg-[#1E3A8A]/10 text-[#1E3A8A] text-sm font-semibold px-4 py-2 rounded-full">
             <span>Values</span>
           </div>
-          <h2 className="font-unbounded text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6 max-w-4xl mx-auto leading-tight">
+          <h2 className="font-unbounded text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb2 max-w-4xl mx-auto leading-tight">
             Our core values
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
