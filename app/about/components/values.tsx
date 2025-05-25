@@ -68,7 +68,7 @@ const Values = () => {
 
               {/* Content */}
               <div className="text-center">
-                <h3 className=" font-unbounded text-3xl font-bold text-gray-800 mb-3 group-hover:text-[#1E3A8A] transition-colors duration-300">
+                <h3 className=" font-unbounded text-2xl font-bold text-gray-800 mb-3 group-hover:text-[#1E3A8A] transition-colors duration-300">
                   {value.title}
                 </h3>
                 <p className=" font-lato text-gray-600 leading-relaxed text-base">
