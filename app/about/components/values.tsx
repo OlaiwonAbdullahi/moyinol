@@ -43,7 +43,7 @@ const Values = () => {
           <h2 className="font-unbounded text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb2 max-w-4xl mx-auto leading-tight">
             Our core values
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg font-lato text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, autem
             fugit vel consequuntur commodi harum, temporibus quos corrupti esse
             corporis laborum velit soluta inv
@@ -68,10 +68,10 @@ const Values = () => {
 
               {/* Content */}
               <div className="text-center">
-                <h3 className="text-xl font-bold text-gray-800 mb-3 group-hover:text-[#1E3A8A] transition-colors duration-300">
+                <h3 className=" font-unbounded text-3xl font-bold text-gray-800 mb-3 group-hover:text-[#1E3A8A] transition-colors duration-300">
                   {value.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed text-lg">
+                <p className=" font-lato text-gray-600 leading-relaxed text-base">
                   {value.description}
                 </p>
               </div>
