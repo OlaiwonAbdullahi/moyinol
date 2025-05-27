@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FiArrowRight } from "react-icons/fi";
 
@@ -34,8 +35,10 @@ const Mission = () => {
           {/* Image Section */}
           <div className="flex-1 relative">
             <div className="relative overflow-hidden rounded-2xl shadow-2xl group">
-              <img
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
+              <Image
+                src="/about.png"
+                width={800}
+                height={600}
                 alt="Modern office space representing our vision"
                 className="w-full h-64 lg:h-[350px] object-cover transition-transform duration-700 group-hover:scale-105"
               />

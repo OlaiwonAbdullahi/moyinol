@@ -35,7 +35,7 @@ const About = () => {
         </div>
         <div className="md:w-[650px] h-[500px] w-full flex justify-center">
           <Image
-            src={"/about.jpeg"}
+            src={"/about.png"}
             alt="Team collaboration"
             width={1000}
             height={1000}
