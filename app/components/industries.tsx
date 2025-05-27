@@ -111,7 +111,7 @@ const Industries = () => {
   ];
 
   return (
-    <div className="font-lato bg-[#F0F4FF] py-16 lg:py-24">
+    <div className="font-lato bg-[#F0F4FF] py-16 lg:py-24" data-aos="fade-up">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-12 lg:mb-16">
@@ -145,13 +145,14 @@ const Industries = () => {
           {/* Industries Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 bg-white rounded-2xl md:rounded-3xl shadow-xl overflow-hidden">
             {industries.map((industry, index) => (
-              <IndustryCard
-                key={index}
-                title={industry.title}
-                description={industry.description}
-                icon={industry.icon}
-                borderClasses={industry.borderClasses}
-              />
+              <div data-aos="fade-up" data-aos-delay={index * 100} key={index}>
+                <IndustryCard
+                  title={industry.title}
+                  description={industry.description}
+                  icon={industry.icon}
+                  borderClasses={industry.borderClasses}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -173,6 +174,8 @@ const Industries = () => {
               <div
                 key={index}
                 className="group bg-white p-6 md:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-[#1E3A8A]/20"
+                data-aos="fade-up"
+                data-aos-delay={index * 150}
               >
                 <div className="flex items-start mb-4">
                   <div className="w-12 h-12 flex items-center justify-center bg-[#1E3A8A]/10 text-[#1E3A8A] rounded-xl mr-4 group-hover:bg-[#1E3A8A] group-hover:text-white transition-all duration-300">

@@ -179,7 +179,7 @@ const Service = () => {
   ];
 
   return (
-    <div className="font-lato w-full py-16 px-6 bg-white">
+    <div className="font-lato w-full py-16 px-6 bg-white" data-aos="fade-up">
       <div className="max-w-7xl mx-auto">
         <div className=" space-y-2 pb-3.5">
           <div className="bg-[#1E3A8A]/20 text-center flex  mx-auto justify-center rounded-full w-fit px-4 py-1 text-[#1E3A8A] font-medium text-sm">
@@ -197,16 +197,17 @@ const Service = () => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              title={service.title}
-              description={service.description}
-              bgColor={service.bgColor}
-              textColor={service.textColor}
-              borderColor={service.borderColor}
-              icon={service.icon}
-              iconBgColor={service.iconBgColor}
-            />
+            <div data-aos="zoom-in" data-aos-delay={index * 100} key={index}>
+              <ServiceCard
+                title={service.title}
+                description={service.description}
+                bgColor={service.bgColor}
+                textColor={service.textColor}
+                borderColor={service.borderColor}
+                icon={service.icon}
+                iconBgColor={service.iconBgColor}
+              />
+            </div>
           ))}
         </div>
       </div>
