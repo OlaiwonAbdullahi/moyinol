@@ -1,11 +1,5 @@
 import React from "react";
-import {
-  LuClock,
-  LuMail,
-  LuMapPin,
-  LuMessageCircle,
-  LuPhone,
-} from "react-icons/lu";
+import { LuClock, LuMail, LuMapPin, LuPhone } from "react-icons/lu";
 import { MdOutlineWhatsapp } from "react-icons/md";
 
 const ContactDetails = () => {
