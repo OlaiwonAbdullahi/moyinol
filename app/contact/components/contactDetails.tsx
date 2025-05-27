@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  LuClock,
-  LuMail,
-  LuMapPin,
-  LuMessageCircle,
-  LuPhone,
-} from "react-icons/lu";
+import { LuClock, LuMail, LuMapPin, LuPhone } from "react-icons/lu";
+import { MdOutlineWhatsapp } from "react-icons/md";
 
 const ContactDetails = () => {
   return (
@@ -19,19 +14,19 @@ const ContactDetails = () => {
         <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 hover:shadow-md transition-shadow">
           <div className="flex flex-col items-start space-y-6">
             <div className="flex-shrink-0">
-              <div className="w-12 h-12 bg-[#1E3A8A]/10 rounded-lg flex items-center justify-center">
-                <LuMessageCircle className="w-6 h-6 text-[#1E3A8A]" />
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
+                <MdOutlineWhatsapp className="w-6 h-6 text-green-600" />
               </div>
             </div>
             <div className="flex-1">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                Live Chat Support
+                Chat Support
               </h3>
               <p className="text-gray-600 mb-4">
                 Chat with our support team 24/7 for instant assistance
               </p>
-              <button className="bg-[#1E3A8A] hover:bg-[#1E3A8A]/50 text-white px-4 py-2 rounded-lg font-medium transition-colors">
-                Start Live Chat
+              <button className="bg-green-600 hover:bg-green-400 text-white px-4 py-2 rounded-lg font-medium transition-colors">
+                Start Chat
               </button>
             </div>
           </div>
@@ -41,8 +36,8 @@ const ContactDetails = () => {
         <div className="bg-green-50 border border-green-200 rounded-lg p-6 hover:shadow-md transition-shadow">
           <div className="flex flex-col items-start space-y-6">
             <div className="flex-shrink-0">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
-                <LuPhone className="w-6 h-6 text-green-600" />
+              <div className="w-12 h-12 bg-[#1E3A8A]/10 rounded-lg flex items-center justify-center">
+                <LuPhone className="w-6 h-6 text-[#1E3A8A]" />
               </div>
             </div>
             <div className="flex-1">
