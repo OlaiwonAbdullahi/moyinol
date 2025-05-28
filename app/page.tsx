@@ -2,7 +2,6 @@
 
 import React, { useEffect } from "react";
 import dynamic from "next/dynamic";
-import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Hero = dynamic(() => import("./components/hero"), {
@@ -21,44 +20,33 @@ const Industries = dynamic(() => import("./components/industries"), {
   loading: () => <div className="animate-pulse bg-gray-200 h-64" />,
 });
 
-
 const HomePage = () => {
   useEffect(() => {
-    try {
+    import("aos").then((AOS) => {
       AOS.init({
         duration: 800,
         easing: "ease-in-out",
-        once: true, 
-        offset: 100, 
+        once: true,
+        offset: 100,
         delay: 100,
-        disable: window.innerWidth < 768, 
+        disable: window.innerWidth < 768,
       });
-
       AOS.refresh();
-    } catch (error) {
-      console.warn("AOS initialization failed:", error);
-    }
-
-    return () => {
-      AOS.refreshHard();
-    };
+    });
   }, []);
 
   return (
     <main className="min-h-screen">
-      <section id="hero" role="banner">
+      <section id="hero">
         <Hero />
       </section>
-
-      <section id="about" role="region" aria-label="About Us">
+      <section id="about">
         <About />
       </section>
-
-      <section id="industries" role="region" aria-label="Industries We Serve">
+      <section id="industries">
         <Industries />
       </section>
-
-      <section id="services" role="region" aria-label="Our Services">
+      <section id="services">
         <Service />
       </section>
     </main>

@@ -8,7 +8,6 @@ const Page = () => {
   return (
     <div>
       <Hero />
-
       <Vision />
       <Mission />
       <Values />
