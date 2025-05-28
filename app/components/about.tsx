@@ -4,9 +4,12 @@ import { BsArrowRight } from "react-icons/bs";
 
 const About = () => {
   return (
-    <div className="flex font-lato flex-col md:flex-row items-center gap-8 py-16 px-4 md:px-12  bg-white">
+    <div
+      className="flex font-lato flex-col md:flex-row items-center gap-8 py-16 px-4 md:px-12  bg-white"
+      data-aos="fade-up"
+    >
       <div className="w-11/12 flex md:flex-row flex-col mx-auto gap-6">
-        <div className="space-y-6 md:w-1/2 w-full">
+        <div className="space-y-6 md:w-1/2 w-full" data-aos="fade-right">
           <div className="bg-[#1E3A8A]/20 rounded-full w-fit px-4 py-1 text-[#1E3A8A] font-medium text-sm">
             About Us
           </div>
@@ -33,7 +36,10 @@ const About = () => {
             <BsArrowRight size={16} />
           </button>
         </div>
-        <div className="md:w-[650px] h-[500px] w-full flex justify-center">
+        <div
+          className="md:w-[650px] h-[500px] w-full flex justify-center"
+          data-aos="fade-left"
+        >
           <Image
             src={"/about.png"}
             alt="Team collaboration"

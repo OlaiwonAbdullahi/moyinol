@@ -66,7 +66,10 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex flex-col font-lato items-center md:py-28 py-27 px-4 md:px-12 max-w-7xl mx-auto relative overflow-hidden">
+    <div
+      className="flex flex-col font-lato items-center md:py-28 py-27 px-4 md:px-12 max-w-7xl mx-auto relative overflow-hidden"
+      data-aos="fade-up"
+    >
       {/* Floating Icons */}
       {showIcons &&
         floatingIcons.map((item, index) => (
@@ -86,7 +89,10 @@ const Hero = () => {
         ))}
 
       {/* Badge with dots */}
-      <div className="bg-blue-100 rounded-full md:px-6 px-3 py-1 text-[#1E3A8A] font-medium text-sm mb-5 z-10">
+      <div
+        className="bg-blue-100 rounded-full md:px-6 px-3 py-1 text-[#1E3A8A] font-medium text-sm mb-5 z-10"
+        data-aos="zoom-in"
+      >
         <div className="flex items-center space-x-2 md:space-x-1">
           <span>Innovative</span>
           <GoDotFill size={14} className="text-[#1E3A8A]" />
@@ -97,7 +103,11 @@ const Hero = () => {
       </div>
 
       {/* Headline and subheading */}
-      <div className="text-center mb-12 space-y-6 z-10">
+      <div
+        className="text-center mb-12 space-y-6 z-10"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
         <h1 className="text-4xl font-unbounded md:text-6xl font-bold text-gray-900 leading-tight max-w-4xl">
           Empowering Compliance Through Innovative, Risk-Based Solutions
         </h1>
@@ -120,7 +130,11 @@ const Hero = () => {
       </div>
 
       {/* Hero image with gradient overlay and shadow */}
-      <div className="w-full relative z-10">
+      <div
+        className="w-full relative z-10"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         <div className="absolute inset-0 bg-gradient-to-b from-blue-100/20 to-transparent rounded-2xl"></div>
         <Image
           src={"/hero.png"}
