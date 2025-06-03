@@ -10,14 +10,14 @@ const Vision = () => {
           {/* Content Section */}
           <div className="flex-1 space-y-6">
             <div className="space-y-4">
-              <h2 className="text-3xl lg:text-4xl font-bold text-[#1E3A8A] leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-unbounded font-bold text-[#1E3A8A] leading-tight">
                 Our Vision
               </h2>
             </div>
 
             <div className="relative">
               <div className="absolute left-0 top-0 bottom-0 w-1 bg-[#1E3A8A] rounded-full"></div>
-              <p className="text-lg lg:text-xl text-gray-700 leading-relaxed pl-6 font-light">
+              <p className="text-lg lg:text-xl font-lato text-gray-700 leading-relaxed pl-6 font-light">
                 To be Africa&apos;s most reliable AML compliance partner,
                 committed to safeguarding financial systems from criminal
                 exploitation.
@@ -25,7 +25,7 @@ const Vision = () => {
             </div>
 
             <div className="pt-4">
-              <button className=" gap-3.5 inline-flex items-center px-6 py-3 bg-[#1E3A8A] text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
+              <button className=" gap-3.5 inline-flex font-unbounded items-center px-6 py-3 bg-[#1E3A8A] text-white font-semibold rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">
                 Learn More
                 <FiArrowRight className="size-5" />
               </button>

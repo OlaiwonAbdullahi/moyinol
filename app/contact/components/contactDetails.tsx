@@ -1,5 +1,5 @@
 import React from "react";
-import { LuClock, LuMail, LuMapPin, LuPhone } from "react-icons/lu";
+import { LuMail, LuMapPin, LuPhone } from "react-icons/lu";
 import { MdOutlineWhatsapp } from "react-icons/md";
 
 const ContactDetails = () => {
@@ -11,7 +11,7 @@ const ContactDetails = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Live Chat */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+        <div className="bg-green-50 border border-green-200 rounded-lg p-6 hover:shadow-md transition-shadow">
           <div className="flex flex-col items-start space-y-6">
             <div className="flex-shrink-0">
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center">
@@ -33,7 +33,7 @@ const ContactDetails = () => {
         </div>
 
         {/* Phone Support */}
-        <div className="bg-green-50 border border-green-200 rounded-lg p-6 hover:shadow-md transition-shadow">
+        <div className="bg-[#1E3A8A]/5 border border-[#1E3A8A]/10 rounded-lg p-6 hover:shadow-md transition-shadow">
           <div className="flex flex-col items-start space-y-6">
             <div className="flex-shrink-0">
               <div className="w-12 h-12 bg-[#1E3A8A]/10 rounded-lg flex items-center justify-center">
@@ -45,15 +45,16 @@ const ContactDetails = () => {
                 Phone Support
               </h3>
               <div className="flex items-center text-gray-600 mb-2">
-                <LuClock className="w-4 h-4 mr-2" />
-                <span className="text-sm">
+                <span className="text-base">
                   Monday - Friday, 9:00 AM - 6:00 PM
                 </span>
               </div>
               <div className="space-y-1">
-                <div className="text-lg font-medium text-gray-900">
-                  +1 (234) 567-8904
-                </div>
+                <a href="tel:+234803XXXXXXX">
+                  <div className="text-base  text-[#1E3A8A]">
+                    +234803XXXXXXX
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -97,13 +98,7 @@ const ContactDetails = () => {
                 Visit Our Office
               </h3>
               <address className="text-gray-600 not-italic leading-relaxed">
-                123 Business Avenue
-                <br />
-                Suite 456
-                <br />
-                New York, NY 10001
-                <br />
-                United States
+                Ibadan, Oyo State, Nigeria
               </address>
             </div>
           </div>
