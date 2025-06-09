@@ -36,7 +36,7 @@ const HomePage = () => {
   }, []);
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen bg-white">
       <section id="hero">
         <Hero />
       </section>

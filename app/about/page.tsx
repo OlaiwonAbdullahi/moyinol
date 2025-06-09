@@ -6,7 +6,7 @@ import Values from "./components/values";
 
 const Page = () => {
   return (
-    <div>
+    <div className="bg-white">
       <Hero />
       <Vision />
       <Mission />
