@@ -17,7 +17,7 @@ const IndustryCard = ({
 }) => {
   return (
     <div
-      className={`group font-lato p-6 md:p-8 lg:p-10 transition-all duration-300 hover:bg-[#1E3A8A]/5 hover:shadow-lg cursor-pointer ${borderClasses}`}
+      className={`group font-lato p-6 md:p-8 lg:p-10 h-75 transition-all duration-300 hover:bg-[#1E3A8A]/5 hover:shadow-lg cursor-pointer ${borderClasses}`}
     >
       <div className="flex items-start mb-4">
         <div className="w-12 h-12 flex items-center justify-center bg-[#1E3A8A]/10 text-[#1E3A8A] rounded-xl mr-4 group-hover:bg-[#1E3A8A] group-hover:text-white transition-all duration-300">

@@ -6,6 +6,7 @@ import { BsBank, BsBuilding, BsClipboardData } from "react-icons/bs";
 import { LiaBalanceScaleSolid } from "react-icons/lia";
 import { PiGavelLight, PiIdentificationCardLight } from "react-icons/pi";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   // Icons data with different starting positions and animation properties
@@ -120,12 +121,16 @@ const Hero = () => {
 
         {/* CTA buttons */}
         <div className="flex flex-col sm:flex-row justify-center gap-4 pt-2">
-          <button className="px-8 py-3 justify-center cursor-pointer whitespace-nowrap flex items-center gap-2.5 bg-[#1E3A8A] hover:bg-blue-900 text-white font-medium rounded-lg transition-colors">
-            Get Started <GoArrowUpRight className="size-5" />
-          </button>
-          <button className="px-8 py-3 cursor-pointer justify-center whitespace-nowrap flex items-center gap-2.5 border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-blue-50 font-medium rounded-lg transition-colors">
-            Learn More <IoIosArrowRoundForward className="size-5" />
-          </button>
+          <Link href={"/contact"}>
+            <button className="px-8 py-3 justify-center cursor-pointer whitespace-nowrap flex items-center gap-2.5 bg-[#1E3A8A] hover:bg-blue-900 text-white font-medium rounded-lg transition-colors">
+              Get Started <GoArrowUpRight className="size-5" />
+            </button>
+          </Link>
+          <Link href={"/anout"}>
+            <button className="px-8 py-3 cursor-pointer justify-center whitespace-nowrap flex items-center gap-2.5 border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-blue-50 font-medium rounded-lg transition-colors">
+              Learn More <IoIosArrowRoundForward className="size-5" />
+            </button>
+          </Link>
         </div>
       </div>
 
@@ -160,7 +165,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Add this style to the component to define the float animation */}
       <style jsx>{`
         @keyframes float {
           0%,

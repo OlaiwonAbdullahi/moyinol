@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Cta = () => {
@@ -26,12 +27,16 @@ const Cta = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-transparent border border-white text-[#1E3A8A] font-semibold py-2 px-6 rounded hover:bg-gray-100 transition">
-              Contact Us
-            </button>
-            <button className="bg-[#1E3A8A] text-white font-semibold py-2 px-6 rounded hover:bg-[#1E3A8A]/80 hover:border-[#1E3A8A] hover:border transition">
-              Get Your Consultation
-            </button>
+            <Link href={"/contact"}>
+              <button className="bg-transparent border border-white text-[#1E3A8A] font-semibold py-2 px-6 rounded hover:bg-gray-100 transition">
+                Contact Us
+              </button>
+            </Link>
+            <Link href={"/contact"}>
+              <button className="bg-[#1E3A8A] text-white font-semibold py-2 px-6 rounded hover:bg-[#1E3A8A]/80 hover:border-[#1E3A8A] hover:border transition">
+                Get Your Consultation
+              </button>
+            </Link>
           </div>
         </div>
       </div>
