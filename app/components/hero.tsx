@@ -120,14 +120,14 @@ const Hero = () => {
         </p>
 
         {/* CTA buttons */}
-        <div className="flex flex-col sm:flex-row justify-center gap-4 pt-2">
+        <div className="flex flex-col sm:flex-row justify-center md:items-center gap-4 p-2 mx-auto md:w-fit">
           <Link href={"/contact"}>
-            <button className="px-8 py-3 justify-center cursor-pointer whitespace-nowrap flex items-center gap-2.5 bg-[#1E3A8A] hover:bg-blue-900 text-white font-medium rounded-lg transition-colors">
+            <button className="px-8 py-3 justify-center w-full md:w-fit cursor-pointer whitespace-nowrap flex items-center gap-2.5 bg-[#1E3A8A] hover:bg-blue-900 text-white font-medium rounded-lg transition-colors">
               Get Started <GoArrowUpRight className="size-5" />
             </button>
           </Link>
-          <Link href={"/anout"}>
-            <button className="px-8 py-3 cursor-pointer justify-center whitespace-nowrap flex items-center gap-2.5 border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-blue-50 font-medium rounded-lg transition-colors">
+          <Link href={"/about"} className="w-full justify-center">
+            <button className="w-full md:w-fit px-8 py-3 cursor-pointer justify-center whitespace-nowrap flex items-center gap-2.5 border-2 border-[#1E3A8A] text-[#1E3A8A] hover:bg-blue-50 font-medium rounded-lg transition-colors">
               Learn More <IoIosArrowRoundForward className="size-5" />
             </button>
           </Link>

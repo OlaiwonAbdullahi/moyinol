@@ -4,7 +4,6 @@ import { BsTelephone } from "react-icons/bs";
 import { CiClock2, CiMail } from "react-icons/ci";
 import { FaFacebook, FaLinkedin } from "react-icons/fa";
 import { IoLogoTiktok } from "react-icons/io5";
-import { LiaMapMarkerSolid } from "react-icons/lia";
 import { LuInstagram } from "react-icons/lu";
 
 const Footer = () => {
@@ -108,10 +107,7 @@ const Footer = () => {
                 <CiMail className="text-[#1E3A8A] flex-shrink-0" />
                 <span className="break-all">info@moyinolconsulting.com</span>
               </li>
-              <li className="flex items-start gap-3">
-                <LiaMapMarkerSolid className="text-[#1E3A8A] flex-shrink-0 mt-0.5" />
-                <span>Ibadan, Oyo State, Nigeria</span>
-              </li>
+
               <li className="flex items-center gap-3">
                 <CiClock2 className="text-[#1E3A8A] flex-shrink-0" />
                 <span>Mon-Fri 9AM - 6PM</span>
