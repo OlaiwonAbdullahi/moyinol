@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
@@ -31,10 +32,12 @@ const About = () => {
             tailored, risk-based solutions to meet the evolving demands of
             today&apos;s compliance landscape.
           </p>
-          <button className="flex items-center gap-2 bg-[#1E3A8A] hover:bg-[#1e3b8ad2] transition-colors text-white px-6 py-3 rounded-md font-medium">
-            Learn More
-            <BsArrowRight size={16} />
-          </button>
+          <Link href={"/about"}>
+            <button className="flex items-center gap-2 bg-[#1E3A8A] hover:bg-[#1e3b8ad2] transition-colors text-white px-6 py-3 rounded-md font-medium">
+              Learn More
+              <BsArrowRight size={16} />
+            </button>
+          </Link>
         </div>
         <div
           className="md:w-[650px] h-[500px] w-full flex justify-center"

@@ -1,5 +1,5 @@
 import React from "react";
-import { LuMail, LuMapPin, LuPhone } from "react-icons/lu";
+import { LuMail, LuPhone } from "react-icons/lu";
 import { MdOutlineWhatsapp } from "react-icons/md";
 
 const ContactDetails = () => {
@@ -85,7 +85,7 @@ const ContactDetails = () => {
           </div>
         </div>
 
-        {/* Address */}
+        {/* Address 
         <div className="bg-orange-50 border border-orange-200 rounded-lg p-6 hover:shadow-md transition-shadow">
           <div className="flex flex-col items-start space-y-6">
             <div className="flex-shrink-0">
@@ -102,7 +102,7 @@ const ContactDetails = () => {
               </address>
             </div>
           </div>
-        </div>
+        </div>*/}
       </div>
     </div>
   );

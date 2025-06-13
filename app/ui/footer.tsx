@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import { BsTelephone } from "react-icons/bs";
 import { CiClock2, CiMail } from "react-icons/ci";
@@ -77,18 +78,17 @@ const Footer = () => {
             Company
           </h2>
           <ul className="text-sm md:text-base space-y-2 text-gray-700">
-            <li className="hover:text-[#1E3A8A] cursor-pointer transition-colors">
-              About Us
-            </li>
-            <li className="hover:text-[#1E3A8A] cursor-pointer transition-colors">
-              Our Team
-            </li>
-            <li className="hover:text-[#1E3A8A] cursor-pointer transition-colors">
-              Contact Us
-            </li>
-            <li className="hover:text-[#1E3A8A] cursor-pointer transition-colors">
-              Blog
-            </li>
+            <Link href={"/contact"}>
+              <li className="hover:text-[#1E3A8A] cursor-pointer transition-colors">
+                About Us
+              </li>
+            </Link>
+
+            <Link href={"/contact"}>
+              <li className="hover:text-[#1E3A8A] cursor-pointer transition-colors">
+                Contact Us
+              </li>
+            </Link>
           </ul>
         </div>
 
